@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  div(id='weather')
+
+    //h1(id='weather') !{current_temperature}
+      //span(class='small') &deg;C
+
+    table
+      tr
+        td
+          span(id="weather-icon")
+            p --
+        td
+          h1(id='current')
+            span(id='temp')
+            span(class='small') &deg;C
+
+      tr
+        td
+          i(class="wi wi-sunrise")
+        td(id="sunrise-time")
+      tr
+        td
+          i(class="wi wi-sunset")
+        td(id="sunset-time")
+
+
+  script(src='javascripts/weather.js')
